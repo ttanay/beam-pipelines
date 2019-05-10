@@ -2,6 +2,7 @@ import os
 
 PROJECT_ID = os.getenv('PROJECT_ID')
 TOPIC_NAME = os.getenv('TOPIC_NAME')
+BIGQUERY_TABLE_ID = os.getenv('BIGQUERY_TABLE_ID')
 
 DATA_RANGE_MIN = 0
 DATA_RANGE_MAX = 100
