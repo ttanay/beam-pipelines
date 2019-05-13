@@ -8,18 +8,17 @@ Bonus:
 2. Visualize data with DataStudio
 
 ## Experiment 1
-A simple pipeline with minimum transformations and extras to write to BigQuery from PubSub.
-**Schema:**
-Message - | id | sum | window_end_time |
-**Notes:**
+A simple pipeline with minimum transformations and extras to write to BigQuery from PubSub.  
+**Schema:**  
+Message - | id | sum | window_end_time |  
+**Notes:**  
 The pipeline prints everything correctly, but, data is not written to BigQuery.
 
 ## Experiment 2
-Multiple producers publish messages to PubSub. 
-**Schema:**
-
-Message - | id | data | attributes | publisher_id | window_id |
-Window - | id | start_time | end_time | 
+Multiple producers publish messages to PubSub.  
+**Schema:**  
+Message - | id | data | attributes | publisher_id | window_id |  
+Window - | id | start_time | end_time |   
 Publisher - | id | start_time | end_time |
 
 ## Experiment 3
